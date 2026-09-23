@@ -1,0 +1,45 @@
+// Problem: A. Boy or Girl
+// Contest: Codeforces - Codeforces Round 146 (Div. 2)
+// URL: https://codeforces.com/problemset/problem/236/A
+// Memory Limit: 256 MB
+// Time Limit: 1000 ms
+// 
+// Powered by CP Editor (https://cpeditor.org)
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+#include <cmath>
+#include <map>
+#include <set>
+#include <queue>
+#include <utility>
+
+using namespace std;
+using ll = long long;
+using ld = long double;
+using pii = pair<int, int>;
+
+void solve() {
+    string x;
+    cin >>x;
+    set<char> word;
+    for(char c : x){
+    	word.insert(c);
+    }
+    if (word.size()%2 == 0){
+    	cout << "CHAT WITH HER!" << endl;
+    }
+    else
+    cout << "IGNORE HIM!" << endl;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    
+    solve();
+    
+    return 0;
+}
